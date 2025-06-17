@@ -11,8 +11,8 @@
     <name>${project.artifactId}</name>
 
     <modules>
-        <module>parser-calcite</module>
-        <module>parser-antlr</module>
+        <module>parser</module>
+        <module>optimizer</module>
     </modules>
 
     <properties>

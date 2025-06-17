@@ -44,3 +44,11 @@ Doris： 两层优化器（RBO + CBO）
 （4）物理计划树各个算子对应的任务调度和执行
 hive：Calcite
 Spark：Catalyst
+
+
+sql-parser-doris
+ExportToOutfileLogicalPlanTest 测试类
+private LogicalPlan parseSql(String exportSql) {
+    StatementBase statementBase = new NereidsParser().parseSQL(exportSql).get(0);
+    return ((LogicalPlanAdapter) statementBase).getLogicalPlan();
+}

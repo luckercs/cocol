@@ -8,7 +8,7 @@
         <artifactId>cocol</artifactId>
         <version>1.0.0</version>
     </parent>
-    <artifactId>parser-calcite</artifactId>
+    <artifactId>optimizer</artifactId>
 
     <dependencies>
         <dependency>
