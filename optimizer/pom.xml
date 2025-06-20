@@ -12,6 +12,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.luckercs</groupId>
+            <artifactId>parser</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.calcite</groupId>
             <artifactId>calcite-core</artifactId>
         </dependency>

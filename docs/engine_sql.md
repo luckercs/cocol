@@ -52,3 +52,4 @@ private LogicalPlan parseSql(String exportSql) {
     StatementBase statementBase = new NereidsParser().parseSQL(exportSql).get(0);
     return ((LogicalPlanAdapter) statementBase).getLogicalPlan();
 }
+

@@ -10,7 +10,7 @@ import java.util.function.Function;
 
 public class ParserUtil {
 
-    private static CocolParser getCocolParser(CommonTokenStream tokenStream) {
+    public static CocolParser getCocolParser(CommonTokenStream tokenStream) {
         CocolParser parser = new CocolParser(tokenStream);
         parser.double_quoted_identifiers = false;
         // parser.addParseListener();
@@ -42,8 +42,7 @@ public class ParserUtil {
         return tree;
     }
 
-    public static String ast2Str(CommonTokenStream tokenStream, ParserRuleContext parserRuleContext) {
-        CocolParser parser = getCocolParser(tokenStream);
+    public static String ast2Str(CocolParser parser,  ParserRuleContext parserRuleContext) {
         return parserRuleContext.toStringTree(parser);
     }
 }

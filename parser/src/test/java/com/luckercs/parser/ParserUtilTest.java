@@ -13,7 +13,9 @@ class ParserUtilTest {
 
         ParserRuleContext ast = ParserUtil.toAst(commonTokenStream, CocolParser::compoundOrSingleStatement);
 
-        String ast_str = ParserUtil.ast2Str(commonTokenStream, ast);
+        CocolParser cocolParser = ParserUtil.getCocolParser(commonTokenStream);
+
+        String ast_str = ParserUtil.ast2Str(cocolParser, ast);
         System.out.println(ast_str);
     }
 }
